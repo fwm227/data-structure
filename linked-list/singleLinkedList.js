@@ -1,4 +1,4 @@
-function linkList () {
+function singleLinkedList () {
   let head = null, length;
   let Node = function (val) {
     this.val = val;
@@ -96,14 +96,14 @@ function linkList () {
     console.log(head);
   }
 }
-const chainList = new linkList();
-chainList.append(1);
-chainList.append(2);
-chainList.insert(8, 1);
-chainList.insert(7, 1);
-chainList.getHead();
-console.log(chainList.indexOf(8));
-chainList.remove(2);
-chainList.print();
-console.log(chainList.isEmpty());
-console.log(chainList.toString());
+const linkedList = new singleLinkedList();
+linkedList.append(1);
+linkedList.append(2);
+linkedList.insert(8, 1);
+linkedList.insert(7, 1);
+linkedList.getHead();
+console.log(linkedList.indexOf(8));
+linkedList.remove(2);
+linkedList.print();
+console.log(linkedList.isEmpty());
+console.log(linkedList.toString());

@@ -10,7 +10,6 @@ function doubleLinkedList () {
     let current = head, previous, node = new Node(element);
     if (head === null) {
       head = node;
-      tail = node;
     } else {
       while (current) {
         previous = current;
@@ -18,18 +17,25 @@ function doubleLinkedList () {
       }
       previous.next = node;
       node.prev = previous;
-      tail = node;
-      length++;
     }
+    tail = node;
+    length++;
   }
   // insert node according to index
   this.insert = function (element, index) {
     let current = head, previous, flagIndex = 0, node = new Node(element);
     if (index === 0) {
-      current.pre = node;
+      // insert into head of linkedlist
+      current.prev = node;
       node.next = current;
       head = node;
+    } else if (index === length) {
+      // insert into tail of linkedlist
+      tail.next = node;
+      node.prev = tail;
+      tail = node;
     } else {
+      // insert into center of linkedlist
       while (current && flagIndex++ < index) {
         previous = current
         current = current.next
@@ -39,17 +45,24 @@ function doubleLinkedList () {
       node.next = current;
       current.prev = node;
     }
+    length++;
   }
   // remove node according to index
   this.removeAt = function (index) {
     let current = head, removeNode = null, previous, nextnode, flagIndex = 0;
     if (index === 0) {
       // remove head-node
-      current = current.next;
-      current.prev = null;
-      head = current
+      head = head.next;
+      if (length === 1) {
+        tail = null;
+      } else {
+        head.prev = null;
+      }
     } else if (index === length) {
-
+      // remove tail node
+      previous = tail.prev;
+      previous.next = null;
+      tail = previous;
     } else {
       // remove center-node
       while (flagIndex++ < index) {
@@ -60,6 +73,7 @@ function doubleLinkedList () {
       previous.next = nextnode;
       nextnode.prev = previous;
     }
+    length--;
   }
   this.print = function () {
     console.log(head);
@@ -72,6 +86,7 @@ linkedList.append(2);
 linkedList.append(3);
 linkedList.insert(7, 0);
 linkedList.insert(8, 4);
-/*linkedList.removeAt(0);
-linkedList.removeAt(1);*/
+linkedList.removeAt(0);
+linkedList.removeAt(1);
+linkedList.removeAt(3);
 linkedList.print();

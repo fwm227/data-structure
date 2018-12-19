@@ -1,3 +1,6 @@
+/*
+ * double Linked list Demo
+ */
 function doubleLinkedList () {
   let head = null, tail = null, length = 0;
   let Node = function (val) {

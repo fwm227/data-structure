@@ -1,13 +1,6 @@
-/*add(value)： 向集合添加一个新的项。
-delete(value)： 从集合移除一个值。
-has(value)： 如果值在集合中，返回 true ，否则返回 false 。
-clear()： 移除集合中的所有项。
-size()： 返回集合所包含元素的数量。与数组的 length 属性类似。
-values()： 返回一个包含集合中所有值的数组。
-nuion: 并集
-intersection: 交集
-complement: 补集
-isSubset: 判断是否是子集*/
+/*
+ * Set Demo
+ */
 function Set () {
   this.setList = {};
   // add into set

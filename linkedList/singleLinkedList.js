@@ -1,3 +1,6 @@
+/*
+ * single Linked list Demo
+ */
 function singleLinkedList () {
   let head = null, length;
   let Node = function (val) {

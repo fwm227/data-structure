@@ -52,22 +52,38 @@ function BinarySearchTree () {
   this.print = function (type) {
     switch (type) {
       case 1:
-      preOrderErgodic(root);
+      preOrderTraverse(root, showNode)
       break;
       case 2:
-      centerOrderErgodic(root);
+      inOrderTraverse(root, showNode);
       break;
       case 3:
-      lastOrderErgodic(root);
+      postOrderTraverse(root, showNode);
       break;
     }
   }
-  // previous order ergodic
-  function preOrderErgodic (node) {
+  function showNode (val) {
+    console.log(val);
+  }
+  function preOrderTraverse (node, cb) {
     if (node !== null) {
-      preOrderErgodic(node.left);
-      preOrderErgodic(node);
-      preOrderErgodic(node.right);
+      cb(node.key);
+      preOrderTraverse(node.left, cb);
+      preOrderTraverse(node.right, cb);
+    }
+  }
+  function inOrderTraverse (node, cb) {
+    if (node !== null) {
+      inOrderTraverse(node.left, cb);
+      cb(node.key);
+      inOrderTraverse(node.right, cb);
+    }
+  }
+  function postOrderTraverse (node, cb) {
+    if (node !== null) {
+      postOrderTraverse(node.left, cb);
+      postOrderTraverse(node.right, cb);
+      cb(node.key);
     }
   }
 }
@@ -79,6 +95,8 @@ binarySearchTree.insert(3);
 binarySearchTree.insert(12);
 binarySearchTree.insert(13);
 binarySearchTree.print(1);
+binarySearchTree.print(2);
+binarySearchTree.print(3);
 // binarySearchTree.print();
 // search node
 console.log(binarySearchTree.search(3));

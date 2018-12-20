@@ -8,7 +8,7 @@ function BinarySearchTree () {
     this.right = null;
     this.key = val;
   }
-
+  // insert node into BST
   this.insert = function (val) {
     var newNode = new Node(val);
     if (root === null) {
@@ -32,7 +32,7 @@ function BinarySearchTree () {
       }
     }
   }
-
+  // search node key
   this.search = function (searchKey) {
     return searchNode(root, searchKey);
   }
@@ -49,15 +49,19 @@ function BinarySearchTree () {
       return true;
     }
   }
+  // print BST accroding to type
   this.print = function (type) {
     switch (type) {
       case 1:
+      // preorder traverse
       preOrderTraverse(root, showNode)
       break;
       case 2:
+      // inorder traverse
       inOrderTraverse(root, showNode);
       break;
       case 3:
+      // postorder traverse
       postOrderTraverse(root, showNode);
       break;
     }
@@ -86,6 +90,35 @@ function BinarySearchTree () {
       cb(node.key);
     }
   }
+  // find min or max key from BST, param zero is find min key and param one is find max key
+  this.find = function (type) {
+    switch (type) {
+      case 0:
+      console.log(findMIN(root));
+      break;
+      case 1:
+      console.log(findMAX(root));
+      break;
+    }
+  }
+  function findMIN (node) {
+    if (node) {
+      while (node && node.left !== null) {
+        node = node.left;
+      }
+      return node.key;
+    }
+    return null;
+  }
+  function findMAX (node) {
+    if (node) {
+      while (node && node.right !== null) {
+        node = node.right;
+      }
+      return node.key;
+    }
+    return null;
+  }
 }
 
 var binarySearchTree = new BinarySearchTree();
@@ -94,9 +127,11 @@ binarySearchTree.insert(2);
 binarySearchTree.insert(3);
 binarySearchTree.insert(12);
 binarySearchTree.insert(13);
-binarySearchTree.print(1);
-binarySearchTree.print(2);
-binarySearchTree.print(3);
+// binarySearchTree.print(1);
+// binarySearchTree.print(2);
+// binarySearchTree.print(3);
 // binarySearchTree.print();
 // search node
-console.log(binarySearchTree.search(3));
+// console.log(binarySearchTree.search(3));
+binarySearchTree.find(0);
+binarySearchTree.find(1);

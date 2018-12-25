@@ -5,23 +5,23 @@
 运行环境Node.js
 
 # 目录
-* 栈
-** 栈实现 https://github.com/clm960227/data-structure/blob/master/stack/index.js
-** 栈实现十进制转二进制 https://github.com/clm960227/data-structure/blob/master/stack/DecimaltoBianry.js
+1. 栈
+* 栈实现 https://github.com/clm960227/data-structure/blob/master/stack/index.js
+* 栈实现十进制转二进制 https://github.com/clm960227/data-structure/blob/master/stack/DecimaltoBianry.js
 
-* 队列
-** 队列实现 https://github.com/clm960227/data-structure/blob/master/queue/index.js
-** 优先队列 https://github.com/clm960227/data-structure/blob/master/queue/priorityQueue.js
-** 循环队列 https://github.com/clm960227/data-structure/blob/master/queue/loopQueue.js
+2. 队列
+* 队列实现 https://github.com/clm960227/data-structure/blob/master/queue/index.js
+* 优先队列 https://github.com/clm960227/data-structure/blob/master/queue/priorityQueue.js
+* 循环队列 https://github.com/clm960227/data-structure/blob/master/queue/loopQueue.js
 
-* 链表
-** 单链表 https://github.com/clm960227/data-structure/blob/master/linkedList/singleLinkedList.js
-** 双链表 https://github.com/clm960227/data-structure/blob/master/linkedList/doubleLinkedList.js
-** 循环链表 https://github.com/clm960227/data-structure/blob/master/linkedList/loopLinkedList.js
+3 链表
+* 单链表 https://github.com/clm960227/data-structure/blob/master/linkedList/singleLinkedList.js
+* 双链表 https://github.com/clm960227/data-structure/blob/master/linkedList/doubleLinkedList.js
+* 循环链表 https://github.com/clm960227/data-structure/blob/master/linkedList/loopLinkedList.js
 
-* 集合
-** 集合实现 https://github.com/clm960227/data-structure/blob/master/set/index.js
+4 集合
+* 集合实现 https://github.com/clm960227/data-structure/blob/master/set/index.js
 
-* 树
-** BST https://github.com/clm960227/data-structure/blob/master/tree/binarySearchTree.js
-** AST https://github.com/clm960227/data-structure/blob/master/tree/ASTTree.js
+5 树
+* BST https://github.com/clm960227/data-structure/blob/master/tree/binarySearchTree.js
+* AST https://github.com/clm960227/data-structure/blob/master/tree/ASTTree.js

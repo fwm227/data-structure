@@ -15,14 +15,20 @@
 * 优先队列 https://github.com/clm960227/data-structure/blob/master/queue/priorityQueue.js
 * 循环队列 https://github.com/clm960227/data-structure/blob/master/queue/loopQueue.js
 
-## 3 链表
+## 3. 链表
 * 单链表 https://github.com/clm960227/data-structure/blob/master/linkedList/singleLinkedList.js
 * 双链表 https://github.com/clm960227/data-structure/blob/master/linkedList/doubleLinkedList.js
 * 循环链表 https://github.com/clm960227/data-structure/blob/master/linkedList/loopLinkedList.js
 
-## 4 集合
+## 4. 集合
 * 集合实现 https://github.com/clm960227/data-structure/blob/master/set/index.js
 
-## 5 树
+### 5.字典
+* 字典实现 https://github.com/clm960227/data-structure/blob/master/dictionary/index.js
+
+## 6. 树
 * BST https://github.com/clm960227/data-structure/blob/master/tree/binarySearchTree.js
 * AST https://github.com/clm960227/data-structure/blob/master/tree/ASTTree.js
+
+### 7. 图
+* 图实现 https://github.com/clm960227/data-structure/blob/master/graph/index.js

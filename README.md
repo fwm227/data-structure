@@ -23,7 +23,7 @@
 ## 4. 集合
 * 集合实现 https://github.com/clm960227/data-structure/blob/master/set/index.js
 
-### 5.字典
+### 5. 字典
 * 字典实现 https://github.com/clm960227/data-structure/blob/master/dictionary/index.js
 
 ## 6. 树

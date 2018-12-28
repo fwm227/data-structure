@@ -26,9 +26,13 @@ function Graph () {
       })
     }
   }
+  // get neighbors vertext of input vertext
+  this.getNeigh = function (v) {
+    return abjEdge.get(v);
+  }
 }
-
-var graph = new Graph();
+module.exports = Graph;
+/*var graph = new Graph();
 var vertices = ['A', 'B', 'C', 'D'];
 vertices.forEach((el, index) => {
   graph.addVertex(el);
@@ -36,4 +40,4 @@ vertices.forEach((el, index) => {
 graph.addEdge('A', 'B');
 graph.addEdge('A', 'C');
 graph.addEdge('A', 'D');
-graph.toString();
+graph.toString();*/

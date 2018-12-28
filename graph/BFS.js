@@ -21,7 +21,7 @@ graph.addEdge('D', 'H');
 function BFS (v, callback) {
   var queue = new Queue();
   // initial isVisit array, -1 indicates was accessed, 0 indicates did'nt searched, 1 indicates has been searching
-  var isVisit = [];
+  var isVisit = Object.create(null);
   vertices.forEach(function (el, index) {
     isVisit[el] = 0;
   })
@@ -38,8 +38,8 @@ function BFS (v, callback) {
     }
     isVisit[u] = -1;
     callback(u);
+    callback(isVisit);
   }
-  callback(isVisit);
 }
 
 BFS (vertices[0], function (v) {

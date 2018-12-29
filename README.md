@@ -32,3 +32,5 @@
 
 ## 7. 图
 * 图实现 https://github.com/clm960227/data-structure/blob/master/graph/index.js
+* DFS https://github.com/clm960227/data-structure/blob/master/graph/DFS.js
+* BFS https://github.com/clm960227/data-structure/blob/master/graph/BFS.js

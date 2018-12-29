@@ -20,6 +20,9 @@ Array.prototype.selectionSort = function (type) {
     Array.prototype.swap.call(this, i, flagIdx);
   }
 }
-var arr = [1, 3, 2, 5, 0];
+var arr = [];
+for (var i = 0; i < 10; i++) {
+  arr.push(parseInt(Math.random() * 50));
+}
 arr.selectionSort(0);
 console.log(arr);

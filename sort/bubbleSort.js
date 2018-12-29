@@ -1,12 +1,8 @@
 /*
 * bubble sort Demo
  */
+require('./common.js');
 // init swap in array prototype
-Array.prototype.swap = function (idx1, idx2) {
-  var temp = this[idx1];
-  this[idx1] = this[idx2];
-  this[idx2] = temp;
-}
 Array.prototype.bubbleSort = function (type) {
   for (var i = 0; i < this.length-1; i++) {
     for (var j = 0; j < this.length-1-i; j++) {

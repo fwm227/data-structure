@@ -37,3 +37,9 @@
 
 ## 8. 最短路径
 * Dijkstra https://github.com/clm960227/data-structure/blob/master/shortestPath/BFS_Dijkstra.js
+
+## 9. 排序
+* 冒泡排序 https://github.com/clm960227/data-structure/blob/master/sort/bubbleSort.js
+* 选择排序 https://github.com/clm960227/data-structure/blob/master/sort/selectionSort.js
+* 插入排序 https://github.com/clm960227/data-structure/blob/master/sort/insertionSort.js
+* 归并排序 https://github.com/clm960227/data-structure/blob/master/sort/mergeSort.js

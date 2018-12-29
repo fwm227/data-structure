@@ -2,7 +2,7 @@
 * bubble sort Demo
  */
 // init swap in array prototype
-Array.prototype.swap = function (arr, idx1, idx2) {
+Array.prototype.swap = function (idx1, idx2) {
   var temp = arr[idx1];
   arr[idx1] = arr[idx2];
   arr[idx2] = temp;
@@ -13,11 +13,11 @@ function bubbleSort (arr, type) {
       // type 0 indicates that is from smallest to lagest,1 indicates reverse mean
       if (type === 0) {
         if (arr[i] > arr[j]) {
-          Array.prototype.swap(arr, i, j);
+          Array.prototype.swap.call(arr, i, j);
         }
       } else if (type === 1) {
         if (arr[i] < arr[j]) {
-          Array.prototype.swap(arr, i, j);
+          Array.prototype.swap.call(arr, i, j);
         }
       }
     }

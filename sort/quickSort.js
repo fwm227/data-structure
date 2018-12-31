@@ -4,12 +4,9 @@
 require('./common.js');
 function quickSort (arr, left, right) {
   var index = partition(arr, left, right);
-  if (arr.length > 1) {
-    if (left < index - 1) {
+  if (left < right) {
       quickSort(arr, left, index - 1);
-    } else if (right > index) {
       quickSort(arr, index, right);
-    }
   }
 }
 
@@ -17,7 +14,7 @@ function partition (arr, left, right) {
   var pivot = arr[Math.floor((left + right) / 2)];
   var l = left;
   var h = right;
-  if (l < h) {
+  while (l < h) {
     while (l < h && arr[l] < pivot) {
       l++;
     }
@@ -27,7 +24,6 @@ function partition (arr, left, right) {
     Array.prototype.swap.call(arr, l, h);
     l++;
     h--;
-    return l;
   }
   return l;
 }

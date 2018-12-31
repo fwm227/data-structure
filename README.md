@@ -43,3 +43,8 @@
 * 选择排序 https://github.com/clm960227/data-structure/blob/master/sort/selectionSort.js
 * 插入排序 https://github.com/clm960227/data-structure/blob/master/sort/insertionSort.js
 * 归并排序 https://github.com/clm960227/data-structure/blob/master/sort/mergeSort.js
+* 快速排序 https://github.com/clm960227/data-structure/blob/master/sort/quickSort.js
+* 堆排序 https://github.com/clm960227/data-structure/blob/master/sort/heapSort.js
+
+## 10. 搜索
+* 二分搜索 https://github.com/clm960227/data-structure/blob/master/search/binarySearch.js

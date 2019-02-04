@@ -28,7 +28,7 @@
 
 ## 6. 树
 * BST https://github.com/smile960227/data-structure/blob/master/tree/binarySearchTree.js
-* AST https://github.com/smile960227/data-structure/blob/master/tree/ASTTree.js
+* AST https://github.com/smile960227/data-structure/blob/master/tree/AVLTree.js
 
 ## 7. 图
 * 图实现 https://github.com/smile960227/data-structure/blob/master/graph/index.js

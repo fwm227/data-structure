@@ -1,14 +1,14 @@
 /*
-* AST tree, order to balance binary search tree 
+* AVL tree, order to balance binary search tree 
 */
-function AST () {
+function AVL () {
   var root = null;
   function Node (val) {
     this.left = null;
     this.right = null;
     this.key = val;
   }
-  // insert AST tres
+  // insert into AVL tree
   this.insert = function (key) {
     root = insertNode(root, key);
   }
@@ -84,10 +84,10 @@ function AST () {
   }
 }
 
-var ASTTree = new AST();
-ASTTree.insert(6);
-ASTTree.insert(1);
-ASTTree.insert(3);
-ASTTree.insert(4);
-ASTTree.insert(5);
-ASTTree.print();
+var AVLTree = new AVL();
+AVLTree.insert(6);
+AVLTree.insert(1);
+AVLTree.insert(3);
+AVLTree.insert(4);
+AVLTree.insert(5);
+AVLTree.print();

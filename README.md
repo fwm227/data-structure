@@ -33,7 +33,7 @@
 ## 7. 图
 * 图实现 https://github.com/reming0227/data-structure/blob/master/graph/index.js
 * DFS https://github.com/reming0227/data-structure/blob/master/graph/DFS.js
-* BFS https://github.com/reming0227/data-structure/blob/master/graph/BFS.js
+* AVL https://github.com/reming0227/data-structure/blob/master/graph/BFS.js
 
 ## 8. 最短路径
 * Dijkstra https://github.com/reming0227/data-structure/blob/master/shortestPath/BFS_Dijkstra.js

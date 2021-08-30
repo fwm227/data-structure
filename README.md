@@ -28,12 +28,12 @@
 
 ## 6. 树
 * BST https://github.com/reming0227/data-structure/blob/master/tree/binarySearchTree.js
-* AST https://github.com/reming0227/data-structure/blob/master/tree/AVLTree.js
+* AVL https://github.com/reming0227/data-structure/blob/master/tree/AVLTree.js
 
 ## 7. 图
 * 图实现 https://github.com/reming0227/data-structure/blob/master/graph/index.js
 * DFS https://github.com/reming0227/data-structure/blob/master/graph/DFS.js
-* AVL https://github.com/reming0227/data-structure/blob/master/graph/BFS.js
+* BFC https://github.com/reming0227/data-structure/blob/master/graph/BFS.js
 
 ## 8. 最短路径
 * Dijkstra https://github.com/reming0227/data-structure/blob/master/shortestPath/BFS_Dijkstra.js
